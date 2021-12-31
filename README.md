@@ -33,4 +33,12 @@ Docker Commands
 28. https://expressjs.com/
 29. //expressjs getting started installing
 30. https://expressjs.com/en/starter/installing.html
+31. 31. docker image rm [image ID]
+32. docker image ls
+33. docker build -t website:latest .
+34. docker build -t  user-service-api:latest .
+35. docker pull node:alpine
+36.  docker pull nginx:alpine
+37. //selecting alpine image could be mentioned in Dockerfile. alpine image will be very light compared to latest
+
 
