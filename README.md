@@ -40,3 +40,16 @@ Docker Commands
 35. docker pull node:alpine
 36.  docker pull nginx:alpine
 37. //selecting alpine image could be mentioned in Dockerfile. alpine image will be very light compared to latest
+38. //selecting alpine image could be mentioned in Dockerfile. alpine image will be very light compared to latest
+39. docker image ls
+40. docker run --name user-api -d -p 3000:3000 user-service-api:latest
+41. docker run --name website -d -p 8080:80  website:latest
+42. //Tagging Images
+43.  docker build -t abhilashgd-website:latest .
+44. docker tag abhilashgd-website abhilashgd-website:1
+45. docker build -t abhilashgd-website:latest .
+46. docker tag abhilashgd-website:latest abhilashgd-website:2
+47.  docker run --name abhilashgd-latest -d -p 8080:80  abhilashgd-website:latest
+48. docker run --name abhilashgd-2 -d -p 8081:80  abhilashgd-website:2
+49. docker run --name abhilashgd-1 -d -p 8082:80  abhilashgd-website:1
+50. docker ps
