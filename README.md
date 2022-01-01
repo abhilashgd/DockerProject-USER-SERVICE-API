@@ -49,7 +49,7 @@ Docker Commands
 44. docker tag abhilashgd-website abhilashgd-website:1
 45. docker build -t abhilashgd-website:latest .
 46. docker tag abhilashgd-website:latest abhilashgd-website:2
-47.  docker run --name abhilashgd-latest -d -p 8080:80  abhilashgd-website:latest
-48. docker run --name abhilashgd-2 -d -p 8081:80  abhilashgd-website:2
-49. docker run --name abhilashgd-1 -d -p 8082:80  abhilashgd-website:1
+47.  docker run --name abhilashgd-latest -d -p 8080:80  abhilashgd-website:latest  //http://localhost:8080/
+48. docker run --name abhilashgd-2 -d -p 8081:80  abhilashgd-website:2 //http://localhost:8081/
+49. docker run --name abhilashgd-1 -d -p 8082:80  abhilashgd-website:1 //http://localhost:8082/
 50. docker ps
