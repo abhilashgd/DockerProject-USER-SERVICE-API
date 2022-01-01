@@ -1,6 +1,9 @@
-# DockerProjects
 
-Docker Commands
+# DockerProjects
+contains branches user-service-api and website
+ 
+ 
+#Docker Commands
 
 1. Docker pull [IMAGE NAME]
 2. Docker run -d [image name]:latest
