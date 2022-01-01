@@ -62,3 +62,32 @@ user-service-api     latest    217442a12283   37 minutes ago      208MB
 abhilashgd-website   1         399a186a61a7   About an hour ago   24.6MB
 website              latest    399a186a61a7   About an hour ago   24.6MB
 nginx                alpine    cc44224bfe20   2 days ago          23.5MB
+
+51. //Docker Registries
+52. Docker registry providers - docker hub, Amazon easy to container registry etc
+53. //pushing to docker hub registry
+54. create a new registry inside hub.docker.com
+55. docker image ls
+56. docker tag abhilashgd-website:1 abhilashgd/website:1
+57. docker tag abhilashgd-website:2 abhilashgd/website:2
+58. docker tag abhilashgd-website:latest abhilashgd/website:latest
+59. docker login
+60. docker push abhilashgd/website:latest
+61. docker push abhilashgd/website:1
+62. docker push abhilashgd/website:2
+63. https://hub.docker.com/repository/docker/abhilashgd/website
+64. docker rmi abhilashgd/website:1
+65. docker rmi abhilashgd/website:2
+66. docker rmi abhilashgd/website:latest
+67. docker pull abhilashgd/website
+68. docker image ls
+69. docker run --name abhilashgd-1 -d -p 8080:80  abhilashgd/website
+70. //to debug docker  container
+71. docker inspect [container id or name]
+72. //to view logs of a container
+73. docker logs [container id or name]
+74. docker inspect [container id] and search form cmd path
+75. docker exec -it [container id ] cmd path [like /bin/sh]
+76. docker logs -f [container id or name] //runtime
+77. Finally use —help tag on any command to get info
+    1. example % docker logs --help
