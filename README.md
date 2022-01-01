@@ -53,3 +53,12 @@ Docker Commands
 48. docker run --name abhilashgd-2 -d -p 8081:80  abhilashgd-website:2 //http://localhost:8081/
 49. docker run --name abhilashgd-1 -d -p 8082:80  abhilashgd-website:1 //http://localhost:8082/
 50. docker ps
+
+➜  DockerProjects git:(website) docker image ls
+REPOSITORY           TAG       IMAGE ID       CREATED             SIZE
+abhilashgd-website   2         bc309f2ca7e9   23 minutes ago      24.6MB
+abhilashgd-website   latest    bc309f2ca7e9   23 minutes ago      24.6MB
+user-service-api     latest    217442a12283   37 minutes ago      208MB
+abhilashgd-website   1         399a186a61a7   About an hour ago   24.6MB
+website              latest    399a186a61a7   About an hour ago   24.6MB
+nginx                alpine    cc44224bfe20   2 days ago          23.5MB
